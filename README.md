@@ -2,7 +2,7 @@
 
   I am a copier, I copy everything from one to another
 
-[![test status](https://github.com/jinzhu/copier/workflows/tests/badge.svg?branch=master "test status")](https://github.com/jinzhu/copier/actions)
+[![test status](https://github.com/windrivder/copier/workflows/tests/badge.svg?branch=master "test status")](https://github.com/windrivder/copier/actions)
 
 ## Features
 
@@ -23,7 +23,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/jinzhu/copier"
+	"github.com/windrivder/copier"
 )
 
 type User struct {
@@ -63,8 +63,8 @@ func (employee *Employee) Role(role string) {
 
 func main() {
 	var (
-		user      = User{Name: "Jinzhu", Age: 18, Role: "Admin", Salary: 200000}
-		users     = []User{{Name: "Jinzhu", Age: 18, Role: "Admin", Salary: 100000}, {Name: "jinzhu 2", Age: 30, Role: "Dev", Salary: 60000}}
+		user      = User{Name: "windrivder", Age: 18, Role: "Admin", Salary: 200000}
+		users     = []User{{Name: "windrivder", Age: 18, Role: "Admin", Salary: 100000}, {Name: "windrivder 2", Age: 30, Role: "Dev", Salary: 60000}}
 		employee  = Employee{Salary: 150000}
 		employees = []Employee{}
 	)
@@ -73,7 +73,7 @@ func main() {
 
 	fmt.Printf("%#v \n", employee)
 	// Employee{
-	//    Name: "Jinzhu",           // Copy from field
+	//    Name: "windrivder",           // Copy from field
 	//    Age: 18,                  // Copy from field
 	//    Salary:150000,            // Copying explicitly ignored
 	//    DoubleAge: 36,            // Copy from method
@@ -86,7 +86,7 @@ func main() {
 
 	fmt.Printf("%#v \n", employees)
 	// []Employee{
-	//   {Name: "Jinzhu", Age: 18, Salary:0, DoubleAge: 36, EmployeeId: 0, SuperRole: "Super Admin"}
+	//   {Name: "windrivder", Age: 18, Salary:0, DoubleAge: 36, EmployeeId: 0, SuperRole: "Super Admin"}
 	// }
 
 	// Copy slice to slice
@@ -95,8 +95,8 @@ func main() {
 
 	fmt.Printf("%#v \n", employees)
 	// []Employee{
-	//   {Name: "Jinzhu", Age: 18, Salary:0, DoubleAge: 36, EmployeeId: 0, SuperRole: "Super Admin"},
-	//   {Name: "jinzhu 2", Age: 30, Salary:0, DoubleAge: 60, EmployeeId: 0, SuperRole: "Super Dev"},
+	//   {Name: "windrivder", Age: 18, Salary:0, DoubleAge: 36, EmployeeId: 0, SuperRole: "Super Admin"},
+	//   {Name: "windrivder 2", Age: 30, Salary:0, DoubleAge: 60, EmployeeId: 0, SuperRole: "Super Dev"},
 	// }
 
  	// Copy map to map
@@ -121,12 +121,12 @@ You can help to make the project better, check out [http://gorm.io/contribute.ht
 
 # Author
 
-**jinzhu**
+**windrivder**
 
-* <http://github.com/jinzhu>
+* <http://github.com/windrivder>
 * <wosmvp@gmail.com>
-* <http://twitter.com/zhangjinzhu>
+* <http://twitter.com/zhangwindrivder>
 
 ## License
 
-Released under the [MIT License](https://github.com/jinzhu/copier/blob/master/License).
+Released under the [MIT License](https://github.com/windrivder/copier/blob/master/License).

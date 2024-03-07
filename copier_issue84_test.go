@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jinzhu/copier"
+	"github.com/windrivder/copier"
 )
 
 type Embedded struct {
